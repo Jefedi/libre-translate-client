@@ -24,13 +24,7 @@
       ],
       "appPermissions": {
         "entitlements": [],
-        "privacy": {
-          "NSAppTransportSecurity": {
-            "NSAllowsArbitraryLoads": {
-              "usageDescription": "Required to connect to LibreTranslate server for translations"
-            }
-          }
-        }
+        "privacy": {}
       }
     }
   ],
