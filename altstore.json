@@ -1,0 +1,48 @@
+{
+  "name": "LibreTranslate Client",
+  "identifier": "com.jefedi.libretranslate.source",
+  "sourceURL": "https://raw.githubusercontent.com/Jefedi/libre-translate-client/master/altstore.json",
+  "apps": [
+    {
+      "name": "LibreTranslate",
+      "bundleIdentifier": "com.jefedi.libretranslate",
+      "developerName": "Jefedi",
+      "subtitle": "Open-source translation client",
+      "localizedDescription": "LibreTranslate Client est une application multiplateforme de traduction connectée à LibreTranslate. Fonctionnalités: traduction instantanée avec détection automatique, historique des traductions avec recherche, système de favoris, alternatives de traduction, cache local SQLite, statistiques en temps réel, mode sombre, et interface Material Design 3.",
+      "iconURL": "https://raw.githubusercontent.com/Jefedi/libre-translate-client/master/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024%401x.png",
+      "tintColor": "#2196F3",
+      "category": "utilities",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2025-12-17",
+          "localizedDescription": "Version initiale:\n• Application Flutter multiplateforme\n• Traduction instantanée avec détection automatique\n• Historique avec recherche\n• Système de favoris\n• Cache SQLite local\n• Statistiques en temps réel\n• Mode sombre\n• Interface Material Design 3",
+          "downloadURL": "https://github.com/Jefedi/libre-translate-client/releases/download/v1.0.0/LibreTranslate-iOS-v1.0.0.ipa",
+          "size": 0
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSAppTransportSecurity": {
+            "NSAllowsArbitraryLoads": {
+              "usageDescription": "Required to connect to LibreTranslate server for translations"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "news": [
+    {
+      "title": "LibreTranslate Client v1.0.0 Released",
+      "identifier": "v1.0.0-release",
+      "caption": "First public release",
+      "date": "2025-12-17",
+      "tintColor": "#2196F3",
+      "notify": true,
+      "url": "https://github.com/Jefedi/libre-translate-client/releases/tag/v1.0.0"
+    }
+  ]
+}

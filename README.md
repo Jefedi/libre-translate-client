@@ -24,9 +24,23 @@ L'application offre une interface épurée avec :
 
 ### Windows
 
-1. Téléchargez la dernière version depuis [Releases](https://github.com/VOTRE_USERNAME/libre-translate-client/releases)
+1. Téléchargez la dernière version depuis [Releases](https://github.com/Jefedi/libre-translate-client/releases)
 2. Extrayez l'archive ZIP
 3. Lancez `libre_translate_app.exe`
+
+### iOS (via AltStore)
+
+1. Installez [AltStore](https://altstore.io/) sur votre iPhone/iPad
+2. Ajoutez la source AltStore:
+   - Ouvrez AltStore sur votre appareil
+   - Allez dans Sources → + (en haut à droite)
+   - Entrez: `https://raw.githubusercontent.com/Jefedi/libre-translate-client/master/altstore.json`
+3. Installez LibreTranslate depuis la source
+4. L'app se rafraîchira automatiquement via AltStore
+
+**Alternative - Installation manuelle:**
+1. Téléchargez le fichier `.ipa` depuis [Releases](https://github.com/Jefedi/libre-translate-client/releases)
+2. Utilisez AltStore pour sideloader l'IPA manuellement
 
 ### Compilation depuis les sources
 

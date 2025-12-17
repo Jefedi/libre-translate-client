@@ -1,0 +1,55 @@
+name: Build iOS IPA
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.0'
+          channel: 'stable'
+
+      - name: Get Flutter dependencies
+        working-directory: ./app
+        run: flutter pub get
+
+      - name: Build iOS (No Codesign)
+        working-directory: ./app
+        run: |
+          flutter build ios --release --no-codesign
+
+      - name: Create IPA
+        working-directory: ./app
+        run: |
+          mkdir -p Payload
+          cp -r build/ios/iphoneos/Runner.app Payload/
+          zip -r LibreTranslate-iOS-v${{ github.ref_name }}.ipa Payload
+          rm -rf Payload
+
+      - name: Upload IPA to Release
+        if: github.event_name == 'release'
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./app/LibreTranslate-iOS-v${{ github.ref_name }}.ipa
+          asset_name: LibreTranslate-iOS-v${{ github.ref_name }}.ipa
+          asset_content_type: application/octet-stream
+
+      - name: Upload IPA as Artifact
+        if: github.event_name != 'release'
+        uses: actions/upload-artifact@v4
+        with:
+          name: LibreTranslate-iOS-IPA
+          path: ./app/LibreTranslate-iOS-*.ipa

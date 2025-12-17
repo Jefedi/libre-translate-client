@@ -9,7 +9,18 @@
       "Bash(git init:*)",
       "Bash(git add:*)",
       "Bash(git commit -m \"$(cat <<''EOF''\nInitial release v1.0.0\n\nFeatures:\n- Multi-platform Flutter application (Windows, macOS, Linux, Android, iOS)\n- Direct connection to LibreTranslate server\n- Instant translation with automatic language detection\n- Translation history with search functionality\n- Favorites system\n- Up to 3 translation alternatives\n- Local SQLite cache for fast access\n- Real-time statistics updates\n- Dark mode support\n- Material Design 3 interface\n- Offline history and favorites\n\nTechnical Stack:\n- Flutter 3.x\n- Provider for state management\n- SQLite for local database\n- HTTP client for API communication\n- Real-time synchronization system\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n)\")",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(git tag:*)",
+      "Bash(tar:*)",
+      "Bash(dir:*)",
+      "Bash(where powershell)",
+      "Bash(powershell -Command:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(gh release create v1.0.0 --title \"LibreTranslate Client v1.0.0\" --notes \"$(cat <<''EOF''\n# LibreTranslate Client v1.0.0\n\n🎉 **Première version publique!**\n\n## Fonctionnalités\n\n✨ **Traduction instantanée**\n- Support de plusieurs langues\n- Détection automatique de la langue source\n- Jusqu''à 3 alternatives de traduction\n\n📚 **Historique et Favoris**\n- Sauvegarde automatique des traductions\n- Recherche dans l''historique\n- Système de favoris\n- Mise à jour en temps réel\n\n💾 **Performance**\n- Cache local SQLite pour un accès rapide\n- Mode hors ligne pour l''historique et les favoris\n- Synchronisation automatique\n\n🎨 **Interface**\n- Design Material 3\n- Mode sombre\n- Interface simple et intuitive\n\n🖥️ **Multiplateforme**\n- Windows ✅ (inclus dans ce release)\n- macOS (compilation depuis sources)\n- Linux (compilation depuis sources)\n- Android (compilation depuis sources)\n- iOS (compilation depuis sources)\n\n## Installation Windows\n\n1. Téléchargez `libre-translate-client-v1.0.0-windows.zip`\n2. Extrayez l''archive\n3. Lancez `libre_translate_app.exe`\n\n## Configuration\n\nL''application se connecte à un serveur LibreTranslate configuré. Pour changer le serveur, modifiez `app/lib/config/app_config.dart` et recompilez.\n\n## Compilation depuis les sources\n\n```bash\ngit clone https://github.com/Jefedi/libre-translate-client.git\ncd libre-translate-client/app\nflutter pub get\nflutter build windows --release\n```\n\n## Notes techniques\n\n- **Flutter**: 3.x\n- **Base de données**: SQLite\n- **State Management**: Provider\n- **Taille du package Windows**: ~13 MB\n\n## Changelog complet\n\n- Application Flutter multiplateforme\n- Connexion directe au serveur LibreTranslate\n- Traduction instantanée avec détection automatique\n- Historique avec recherche\n- Système de favoris\n- Cache SQLite local\n- Statistiques en temps réel\n- Mode sombre\n- Interface Material Design 3\n\n---\n\n🤖 Généré avec [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n)\" libre-translate-client-v1.0.0-windows.zip)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" --version)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" auth login)",
+      "Bash(flutter create:*)"
     ],
     "deny": [],
     "ask": []
