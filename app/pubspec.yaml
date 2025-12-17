@@ -1,0 +1,44 @@
+name: libre_translate_app
+description: Application multiplateforme pour LibreTranslate
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.6
+
+  # État et navigation
+  provider: ^6.1.1
+
+  # HTTP et API
+  http: ^1.1.2
+
+  # Base de données locale
+  sqflite: ^2.3.0
+  sqflite_common_ffi: ^2.3.0
+  path: ^1.8.3
+
+  # Stockage local
+  shared_preferences: ^2.2.2
+
+  # Utilitaires
+  intl: ^0.18.1
+  crypto: ^3.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/

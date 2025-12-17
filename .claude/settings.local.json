@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(del:*)",
+      "Bash(flutter run:*)",
+      "Bash(taskkill:*)",
+      "Bash(flutter build:*)",
+      "Bash(start \"\" \"C:\\Users\\Jefe\\Desktop\\Translate\\app\\build\\windows\\x64\\runner\\Release\\libre_translate_app.exe\")",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial release v1.0.0\n\nFeatures:\n- Multi-platform Flutter application (Windows, macOS, Linux, Android, iOS)\n- Direct connection to LibreTranslate server\n- Instant translation with automatic language detection\n- Translation history with search functionality\n- Favorites system\n- Up to 3 translation alternatives\n- Local SQLite cache for fast access\n- Real-time statistics updates\n- Dark mode support\n- Material Design 3 interface\n- Offline history and favorites\n\nTechnical Stack:\n- Flutter 3.x\n- Provider for state management\n- SQLite for local database\n- HTTP client for API communication\n- Real-time synchronization system\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git config:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
